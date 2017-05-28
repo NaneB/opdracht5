@@ -109,3 +109,9 @@ p, .text h2{
     margin: 25px;
     font-size: 20pt;
 }
+footer{
+    font-size: 10pt;
+}
+footer a{
+    color: white;
+}
