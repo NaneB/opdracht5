@@ -1,0 +1,111 @@
+html body{
+    background-color: whitesmoke;
+    line-height: 1.2;
+    overflow: hidden;
+    font-family: 'Assistant', sans-serif;
+}
+
+#container{
+    position: relative;
+    width: 375px;
+    height: 667px;
+    background-color: #e6f3f3;
+    margin: 20px auto;
+    box-shadow: border-box;
+    -webkit-box-shadow: 1px 3px 25px -4px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 3px 25px -4px rgba(0,0,0,1);
+    box-shadow: 1px 3px 25px -4px rgba(0,0,0,1);
+    overflow-y: scroll;
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+}
+#container::-webkit-scrollbar { 
+    display: none;  // Safari and Chrome
+}
+nav, #openMenu, footer{
+    color: white;
+    background-color: darkslategray;
+    padding: 25px;
+}
+#closeMenu{
+    margin-left: 300px;
+}
+#closeMenu, #menu{
+    text-align: right;
+    font-size: 23pt;
+}
+#menu, h1, #closeMenu{
+    display: inline-block;
+    color: white;
+}
+h1{
+    width: 90%;
+    font-size: 25pt;
+    font-family: 'Abril Fatface', cursive;
+}
+h1 a{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+#openMenu{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    width: 0;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+#openMenu ul li{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+#openMenu ul li a{
+    color: white;
+    font-size: 18pt;
+    font-weight: bold;
+}
+section{
+    background-color: white;
+    -webkit-box-shadow: 1px 3px 25px -4px rgba(0,0,0,0.7);
+    -moz-box-shadow: 1px 3px 25px -4px rgba(0,0,0,0.7);
+    box-shadow: 1px 3px 25px -4px rgba(0,0,0,0.7);
+    margin: 25px;
+    border-radius: 5px;
+}
+section img{
+    width: 100%;
+}
+.text{
+    padding: 20px;
+}
+h2{
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+}
+h2 a{
+    color: darkslategray;
+}
+p{
+   font-size: 11pt;
+  
+}
+p, .text h2{
+    margin-bottom: 12px;
+}
+.article p:first-child{
+    font-weight: bold;
+}
+#disqus_thread{
+    padding: 20px;
+}
+.categorie{
+    margin: 25px;
+    font-size: 20pt;
+}
